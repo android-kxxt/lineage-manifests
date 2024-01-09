@@ -965,7 +965,7 @@
   <project path="hardware/st/secure_element2" name="platform/hardware/st/secure_element2" groups="pdk" remote="aosp" />
   <project path="hardware/synaptics/wlan" name="platform/hardware/synaptics/wlan" groups="pdk" remote="aosp" />
   <project path="hardware/ti/am57x" name="platform/hardware/ti/am57x" groups="pdk" remote="aosp" />
-  <project path="kernel/configs" name="LineageOS/android_kernel_configs" groups="vts,pdk" />
+  <project path="kernel/configs" name="android-kxxt/android_kernel_configs" groups="vts,pdk" revision="lineage-21.0-pfa" />
   <project path="kernel/prebuilts/4.19/arm64" name="kernel/prebuilts/4.19/arm64" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="kernel/prebuilts/5.4/arm64" name="kernel/prebuilts/5.4/arm64" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="kernel/prebuilts/5.4/x86_64" name="kernel/prebuilts/5.4/x86-64" groups="pdk" clone-depth="1" remote="aosp" />
@@ -1240,7 +1240,7 @@
   <project path="system/nvram" name="platform/system/nvram" groups="pdk" remote="aosp" />
   <project path="system/secretkeeper" name="platform/system/secretkeeper" groups="pdk" remote="aosp" />
   <project path="system/security" name="LineageOS/android_system_security" groups="pdk" />
-  <project path="system/sepolicy" name="LineageOS/android_system_sepolicy" groups="pdk" />
+  <project path="system/sepolicy" name="android-kxxt/android_system_sepolicy" groups="pdk" revision="lineage-21.0-pfa"/>
   <project path="system/server_configurable_flags" name="platform/system/server_configurable_flags" groups="pdk" remote="aosp" />
   <project path="system/teeui" name="platform/system/teeui" groups="pdk" remote="aosp" />
   <project path="system/testing/gtest_extras" name="platform/system/testing/gtest_extras" groups="pdk" remote="aosp" />
@@ -1337,4 +1337,10 @@
 
   <include name="snippets/lineage.xml" />
   <include name="snippets/pixel.xml" />
+
+  <!-- PFA -->
+  <project path="external/kernelsu" remote="github" name="android-kxxt/external_kernelsu" revision="main" />
+  <project path="vendor/pfa" remote="github" name="android-kxxt/android_vendor_pfa" revision="main" />
+  <project path="packages/apps/Shell" remote="github" name="android-kxxt/android_packages_apps_Shell" revision="master" />
+  <project path="external/prebuilt_bsdtar" remote="github" name="android-kxxt/external_prebuilt_bsdtar" revision="main" />
 </manifest>
